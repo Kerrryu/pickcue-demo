@@ -27,14 +27,12 @@ simulator today; the loaner is what would let it be tested on real glasses.
 
 ## Live demo
 
-The official address for the deck is **https://gottagacha.com/labs/pickcue**. Use that link in
-slides. It goes live when the site change is merged; until then it returns "not found" and the
-staging address below shows the identical page.
+The official address for the deck is **https://gottagacha.com/labs/pickcue**. It is live on the
+GottaGacha site as of 15 November 2026. Use that link in slides.
 
 | What | Link |
 | --- | --- |
 | Official (use this in the deck) | https://gottagacha.com/labs/pickcue |
-| Staging, live now, same page | https://www.staging.gottagacha.com/labs/pickcue |
 | Pick | https://gottagacha.com/labs/pickcue?snapshot=pick |
 | Exception | https://gottagacha.com/labs/pickcue?snapshot=exception |
 | Resume | https://gottagacha.com/labs/pickcue?snapshot=resume |
@@ -42,9 +40,8 @@ staging address below shows the identical page.
 | Display only, for screenshots | https://gottagacha.com/labs/pickcue?view=capture&snapshot=pick |
 | Display plus one-line label | https://gottagacha.com/labs/pickcue?view=capture&label=1&snapshot=pick |
 
-Every link above also works with `https://www.staging.gottagacha.com/labs/pickcue` in place of
-`https://gottagacha.com/labs/pickcue`. This GitHub Pages site is only the file host for the
-images, the video and this note; do not use its address as the demo link in the deck.
+This GitHub Pages site is only the file host for the images, the video and this note. Do not use
+its address as the demo link in the deck.
 
 Controls: Enter taps, Down arrow swipes down, Up arrow swipes up, U double-taps, keys 1 to 4 jump
 to the four moments. On a phone, use the four buttons at the bottom or tap the display.
