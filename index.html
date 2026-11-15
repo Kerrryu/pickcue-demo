@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0f0c" />
+    <title>PickCue | Proposed pilot at GottaGacha</title>
+    <meta
+      name="description"
+      content="Prototype of a heads-up pick list for trading-card singles. Browser preview with synthetic data."
+    />
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="./assets/index-CrEjvUkd.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/storage-D3jLe-7F.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CLayFkaA.css">
+  </head>
+  <body>
+    <header class="top">
+      <p class="brand">
+        <strong>PickCue</strong><span class="bar" aria-hidden="true">|</span
+        ><span>Proposed pilot at GottaGacha</span>
+      </p>
+      <span class="badge">Prototype</span>
+    </header>
+
+    <main class="layout">
+      <section class="stage" aria-labelledby="stage-title">
+        <h1 id="stage-title">A pick list you read without looking down</h1>
+        <p class="lede">
+          Staff pulling trading-card singles see one card at a time on smart glasses: which bin,
+          which printing, how many. They check the card in hand and tap to move on.
+        </p>
+
+        <div class="hud-wrap">
+          <button class="hud-shell" id="hud-shell" type="button" aria-describedby="hud-caption">
+            <canvas id="hud" width="1728" height="864"></canvas>
+            <span class="hud-off" id="hud-off" hidden>Interrupted (simulated). Session dropped.</span>
+          </button>
+          <p class="hud-caption" id="hud-caption">
+            Browser preview of the 576 x 288 display. Not the Even simulator and not G2 hardware.
+          </p>
+          <p class="capture-label" id="capture-label" hidden></p>
+          <pre class="sr-only" id="hud-text" aria-live="polite"></pre>
+        </div>
+
+        <div class="pad" role="group" aria-label="Touchpad gestures">
+          <button type="button" data-gesture="tap">
+            <span class="g">Tap</span><span class="a" data-action="tap"></span>
+          </button>
+          <button type="button" data-gesture="swipeDown">
+            <span class="g">Swipe down</span><span class="a" data-action="swipeDown"></span>
+          </button>
+          <button type="button" data-gesture="swipeUp">
+            <span class="g">Swipe up</span><span class="a" data-action="swipeUp"></span>
+          </button>
+          <button type="button" data-gesture="doubleTap">
+            <span class="g">Double-tap</span><span class="a" data-action="doubleTap"></span>
+          </button>
+        </div>
+        <p class="input-status" id="input-status" role="status"></p>
+        <p class="keys">
+          Keyboard: <kbd>Enter</kbd> tap, <kbd>&darr;</kbd> swipe down, <kbd>&uarr;</kbd> swipe up,
+          <kbd>U</kbd> double-tap. You can also tap the display.
+        </p>
+      </section>
+
+      <section class="guide" aria-labelledby="tour-title">
+        <h2 id="tour-title">60-second tour</h2>
+        <p class="hint">Jump to any of the four moments. Each one loads ready to use.</p>
+        <div class="snaps" id="snaps" role="group" aria-label="Walkthrough snapshots"></div>
+        <div class="note" id="snap-note" aria-live="polite"></div>
+
+        <h2>On the display now</h2>
+        <p class="now" id="now"></p>
+
+        <h2>The batch</h2>
+        <p class="hint">
+          One made-up order of six lines. Every card, set and bin is invented for this demo.
+        </p>
+        <ol class="batch" id="batch"></ol>
+        <p class="progress" id="progress"></p>
+
+        <div class="tools">
+          <button type="button" class="ghost" id="interrupt">Simulate an interruption</button>
+          <button type="button" class="ghost" id="reset">Reset the demo batch</button>
+          <div class="confirm" id="reset-confirm" hidden>
+            <span>Clear all progress on this batch?</span>
+            <button type="button" class="danger" id="reset-yes">Yes, clear it</button>
+            <button type="button" class="ghost" id="reset-no">Keep it</button>
+          </div>
+        </div>
+
+        <h2>What this is, and is not</h2>
+        <ul class="facts">
+          <li>
+            Staff check the physical card. PickCue shows the condition written on the label; it does
+            not scan, identify or grade anything.
+          </li>
+          <li>
+            Progress is saved in this browser after every step, so a reload returns to the same card.
+          </li>
+          <li>
+            The same picking logic drives this preview and the Even Hub build. This page is a browser
+            preview: it is not the official Even simulator, and nothing here has run on G2 hardware.
+          </li>
+          <li>No login, no backend, no analytics, no customer or order data.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>
+        Prototype by Sebastian Maj, GottaGacha co-founder and 168 Group technical director.
+        Synthetic data only.
+      </p>
+    </footer>
+
+  </body>
+</html>
