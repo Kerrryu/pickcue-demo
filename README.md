@@ -1,8 +1,8 @@
 # PickCue | Proposed pilot at GottaGacha
 
-Handoff for whoever is building the pitch deck. Everything below is hosted at
-`https://kerrryu.github.io/pickcue-demo/`. This repository holds the built demo and its
-screenshots only, not the source.
+Handoff for whoever is building the pitch deck. The demo's official address is
+`https://gottagacha.com/labs/pickcue`. This repository hosts the screenshots, the video and this
+note, plus a mirror of the built demo. It does not hold the source.
 
 ## What it is
 
@@ -27,15 +27,24 @@ simulator today; the loaner is what would let it be tested on real glasses.
 
 ## Live demo
 
+The official address for the deck is **https://gottagacha.com/labs/pickcue**. Use that link in
+slides. It goes live when the site change is merged; until then it returns "not found" and the
+staging address below shows the identical page.
+
 | What | Link |
 | --- | --- |
-| Demo (no login) | https://kerrryu.github.io/pickcue-demo/ |
-| Pick | https://kerrryu.github.io/pickcue-demo/?snapshot=pick |
-| Exception | https://kerrryu.github.io/pickcue-demo/?snapshot=exception |
-| Resume | https://kerrryu.github.io/pickcue-demo/?snapshot=resume |
-| Summary | https://kerrryu.github.io/pickcue-demo/?snapshot=summary |
-| Display only, for screenshots | https://kerrryu.github.io/pickcue-demo/?view=capture&snapshot=pick |
-| Display plus one-line label | https://kerrryu.github.io/pickcue-demo/?view=capture&label=1&snapshot=pick |
+| Official (use this in the deck) | https://gottagacha.com/labs/pickcue |
+| Staging, live now, same page | https://www.staging.gottagacha.com/labs/pickcue |
+| Pick | https://gottagacha.com/labs/pickcue?snapshot=pick |
+| Exception | https://gottagacha.com/labs/pickcue?snapshot=exception |
+| Resume | https://gottagacha.com/labs/pickcue?snapshot=resume |
+| Summary | https://gottagacha.com/labs/pickcue?snapshot=summary |
+| Display only, for screenshots | https://gottagacha.com/labs/pickcue?view=capture&snapshot=pick |
+| Display plus one-line label | https://gottagacha.com/labs/pickcue?view=capture&label=1&snapshot=pick |
+
+Every link above also works with `https://www.staging.gottagacha.com/labs/pickcue` in place of
+`https://gottagacha.com/labs/pickcue`. This GitHub Pages site is only the file host for the
+images, the video and this note; do not use its address as the demo link in the deck.
 
 Controls: Enter taps, Down arrow swipes down, Up arrow swipes up, U double-taps, keys 1 to 4 jump
 to the four moments. On a phone, use the four buttons at the bottom or tap the display.
